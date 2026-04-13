@@ -1,12 +1,15 @@
 
-/***********************************************************
- * File: CrabBattleTester.java
- * Course: CSC123
- * Description: Auto-grader for Project 05 – Crab Battle.
- *              Run with: java CrabBattleTester.java
- *              Requires all project .java files in the same directory.
- ***********************************************************/
-
+/********************************************************************
+* Name: Trevon Collins
+* Course: CSC 123
+* Lab: proj05
+* Date: 04/13/2026
+* File: CrabBattleTester.java
+*
+* Description: Auto-grader for Project 05 – Crab Battle.
+*              Run with: java CrabBattleTester.java
+*              Requires all project .java files in the same directory.
+********************************************************************/
 package proj05;
 
 import java.lang.reflect.*;
