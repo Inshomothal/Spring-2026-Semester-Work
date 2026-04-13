@@ -1,3 +1,4 @@
+
 /***********************************************************
  * File: CrabBattleTester.java
  * Course: CSC123
@@ -5,6 +6,8 @@
  *              Run with: java CrabBattleTester.java
  *              Requires all project .java files in the same directory.
  ***********************************************************/
+
+package proj05;
 
 import java.lang.reflect.*;
 import java.util.Random;
