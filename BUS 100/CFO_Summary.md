@@ -1,0 +1,26 @@
+# CFO (Chief Financial Officer)
+
+## Summary
+Wheel Quick’s CFO manages financial planning, pricing, and investor relations to ensure business sustainability and growth.
+
+## Tasks
+- Create financial projections (revenue, expenses, profit)
+- Develop pricing models for hourly and subscription rates
+- Plan for investor funding and capital allocation
+- Set up accounting and reporting systems
+- Monitor financial KPIs
+
+## Goals
+- Sustainable profitability
+- Effective capital management
+- Transparent financial reporting
+
+## Timeline
+- Q1: Financial modeling and pricing
+- Q2: Investor outreach and funding
+- Q3: Reporting and optimization
+
+## Resources
+- Finance team
+- Accounting software
+- Investor contacts

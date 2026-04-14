@@ -1,0 +1,159 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\title{Weekly Homework 03}
+\author{Trevon Collins}
+\date{}
+
+\setcounter{secnumdepth}{0}
+\begin{document}
+\maketitle
+\section{Textbook Problems}
+\begin{enumerate}[label=\#\arabic*]
+    \setcounter{enumi}{3}
+    \item Suppose $x$, $y \in \mathbb{Z}$. If $x$ and $y$ are odd, then xy is odd.
+    \begin{enumerate}[label=Case \arabic*:]
+        \item $x > 0$ and $y > 0$
+        \item $x < 0$ and $y > 0$
+        \item $x > 0$ and $y < 0$
+        \item $x < 0$ and $y < 0$
+    \end{enumerate}
+    Proof 1: Suppose $x=2a+1$, for all integers $a$, $x$ is odd. 
+    W.L.O.G. we can say the same for $y$ for $y=2b+1$.
+    \[
+        \begin{aligned}
+            &xy = (2a+1)(2b+1) = 4ab + 2a + 2b + 1 = 2(2ab + a + b) + 1\\
+            &\implies 2m + 1 \text{, which is odd.}
+        \end{aligned}
+    \]
+
+    \setcounter{enumi}{5}
+    \item Suppose $a$, $b$, $c \in \mathbb{Z}$. If $a|b$ and $a|c$, then $a|(b + c)$.
+    \begin{enumerate}[label=Case \arabic*:]
+        \item $b = 2m$ and $c = 2n$
+        \item $b = 2m$ and $c = 2n + 1$
+        \item $b = 2m + 1$ and $c = 2n + 1$
+    \end{enumerate}
+    \begin{enumerate}[label=Proof \arabic*:]
+        \item $b = a \times k$ and $c = a \times l$ should mean
+        $b+c = a \times k + a \times l = a(k + l)$
+        \[
+            \begin{aligned}
+                2m + 2n &= 2(\frac{ak}{2}) + 2(\frac{al}{2}) 
+                = 2(\frac{ak}{2} + \frac{al}{2}) = ak + al = a(k + l)
+            \end{aligned}
+        \]
+        \item W.L.O.G.
+        \[
+            \begin{aligned}
+                &2m + 2n + 1 = 2(\frac{ak}{2}) + 2(\frac{al - 1}{2} + 1)
+                = 2(\frac{ak}{2} + \frac{al - 1}{2}) + 1 \\
+                &= ak + al - 1 + 1 = a(k + l)
+            \end{aligned}
+        \]
+        \item W.L.O.G.
+        \[
+            \begin{aligned}
+                &2m + 1 + 2n + 1 = 2(\frac{ak - 1}{2}) + 1 + 2(\frac{al - 1}{2}) + 1 \\
+                &= 2(\frac{ak - 1}{2} + \frac{al - 1}{2}) + 2 = ak + al - 1 - 1 + 2 = a(k + l)
+            \end{aligned}
+        \]
+    \end{enumerate}
+    \item  Suppose $a, \ b \in \mathbb{Z}$. If $a|b$, then $a^2|b^2$.
+    \begin{enumerate}[label=Case \arabic*:]
+        \item If $a = 0$, then $b = 0$ and $a^2 | b^2$.
+        \item If $a \neq 0$, then $b = ak$ for some integer $k$. Therfore $b^2 = a^2k^2$ and $a^2 | b^2$. W.L.O.G. applies here for all integers.
+    \end{enumerate}
+
+    \setcounter{enumi}{13}
+    \item If $n \in \mathbb{Z}$, then $5n^2+3n+7$ is odd.
+    \begin{enumerate}[label=Case \arabic*:]
+        \item $n = 2k$ for some integer $k$.
+        \item $n = 2k + 1$ for some integer $k$.
+    \end{enumerate}
+    \begin{enumerate}[label=Proof \arabic*:]
+        \item
+        \[
+            \begin{aligned}
+                &5n^2 + 3n + 7 = 5(2k)^2 + 3(2k) + 7 = 20k^2 + 6k + 7 \\
+                &= 20k^2 + 6k + 6 + 1 = 2(10k^2 + 3k + 3) + 1\\
+                &\implies 2m + 1 \text{, which is odd.}
+            \end{aligned}
+        \]
+        \item 
+        \[
+            \begin{aligned}
+                &5n^2 + 3n + 7 = 5(2k + 1)^2 + 3(2k + 1) + 7 \\
+                &= 5(4k^2 + 4k + 1) + 6k + 3 + 7 = 20k^2 + 26k + 15 \\
+                &= 20k^2 + 26k + 14 + 1 = 2(10k^2 + 13k + 7) + 1\\
+                &\implies 2m + 1 \text{, which is odd.}
+            \end{aligned}
+        \]
+    \end{enumerate}
+
+    \setcounter{enumi}{15}
+    \item  If two integers have the same parity, then their sum is even.
+    \begin{enumerate}[label=Case \arabic*:]
+        \item $k, \ l \in \mathbb{Z}$ and $k = 2m$ and $l = 2n$ for some integers $m$ and $n$.
+        \item $k, \ l \in \mathbb{Z}$ and $k = 2m + 1$ and $l = 2n + 1$ for some integers $m$ and $n$.
+    \end{enumerate}
+    \begin{enumerate}[label=Proof \arabic*:]
+        \item $k + l = 2m + 2n = 2(m + n)$, which is even.
+        \item $k + l = 2m + 1 + 2n + 1 = 2(m + n + 1)$, which is even.
+    \end{enumerate}
+\end{enumerate}
+
+\section{Additional Problems}
+\begin{enumerate}
+    \item Write problems in English sentences.
+        \begin{enumerate}[label=\Alph*.]
+            \item $\forall m \in \mathbb{Z}, \ \exists n \in \mathbb{Z}$ such that $m = 2n$. 
+            \[
+            \textcolor{blue}{\text{For integers $m$ there is an integer $n$ such that $m = 2n$.}}
+            \]
+            \item $\forall x \in \mathbb{R}, \ \exists y \in \mathbb{R}$ such that $x = 2y$.
+            \[
+            \textcolor{blue}{\text{For real numbers $x$ there is a real number $y$ such that $x = 2y$.}}
+            \]
+        \end{enumerate}
+    \newpage
+    \item An integer $x$ is trodd if $x = 3a + 1$ for some $a \in \mathbb{Z}$
+        \begin{enumerate}[label=\Alph*.]
+            \item
+            \[
+            \begin{array}{c|c}
+                a & x = 3a + 1 \\ \hline
+                0 & 1 \\
+                1 & 4 \\
+                2 & 7 \\
+                3 & 10 \\
+                4 & 13 
+            \end{array}
+            \]
+            By this table, we can see that 2, 3, 5, 6, and 8 would not be trodd.
+            \item If $x$ is a trodd integer, then $x^2$ is also a trodd integer.
+            \[
+                \begin{aligned}
+                    \text{Proof: }&x^2 = (3a + 1)^2 = 9a^2 + 6a + 1 = 3(3a^2 + 2a) + 1 \\
+                    &\implies x^2 \text{ is a trodd integer.}
+                \end{aligned}
+            \]
+        \end{enumerate}
+    \item An integer $x$ is four-six divisible if $4|x$ or $6|x$.
+        \begin{enumerate}[label=\Alph*.]
+            \item Prove: If $x$ is four-six divisible, then $7x + 3$ is odd.
+            \begin{enumerate}[label=Case \arabic*:]
+                \item If $4|x$, then $x = 4a$ for $a \in \mathbb{Z}$
+                \item If $6|x$, then $x = 6b$ for $b \in \mathbb{Z}$
+            \end{enumerate}
+            \begin{enumerate}[label=Proof \arabic*:]
+                \item $7x + 3 = 7(4a) + 3 = 28a + 3 = 2(14a) + 3$, which is odd.
+                \item $7x + 3 = 7(6b) + 3 = 42b + 3 = 2(21b) + 3$, which is odd.
+            \end{enumerate}
+        \end{enumerate}
+\end{enumerate}
+\end{document}

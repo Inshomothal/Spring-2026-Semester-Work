@@ -1,0 +1,201 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\title{Pre-Week Homework 05}
+\author{Trevon Collins}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+%2.1
+\setcounter{section}{2}
+\subsection{}
+\begin{enumerate}
+    \item Every real number is an even integer. $\textcolor{blue}{\text{A statement and True}}$
+    \item Every even integer is a real number. $\textcolor{blue}{\text{A statement and True}}$
+    \setcounter{enumi}{3}
+    \item $Sets \ \mathbb{Z} \ and \ \mathbb{N} \ \textcolor{red}{\text{Not a statement}}$
+\end{enumerate}
+
+%2.5
+\setcounter{subsection}{4}
+\subsection{}
+\begin{enumerate}
+    \item $P \vee (Q \Rightarrow R)$
+    \[
+    \begin{array}{c|c|c|c|c}
+        P & Q & R & Q \to R & P \lor (Q \to R) \\ \hline
+        T & T & T &    T    &        T         \\ \hline
+        T & T & F &    F    &        T         \\ \hline
+        T & F & T &    T    &        T         \\ \hline
+        T & F & F &    T    &        T         \\ \hline
+        F & T & T &    T    &        T         \\ \hline
+        F & T & F &    F    &        F         \\ \hline
+        F & F & T &    T    &        T         \\ \hline
+        F & F & F &    T    &        T         \\
+    
+    \end{array}
+    \]
+
+    \setcounter{enumi}{3}
+    \item $\neg (P \lor Q) \lor (\neg P)$
+    \[
+    \begin{array}{c|c|c|c}
+        P & Q & P \lor Q & \neg (P \lor Q) \lor (\neg P) \\ \hline
+        T & T &    T     &               F               \\ \hline
+        T & F &    T     &               F               \\ \hline
+        F & T &    T     &               T               \\ \hline
+        F & F &    F     &               T               \\
+    
+    \end{array}
+    \]
+
+    \setcounter{enumi}{7}
+    \item $P \lor (Q \land \neg R)$
+    \[
+    \begin{array}{c|c|c|c|c}
+        P & Q & R & Q \land \neg R & P \lor (Q \land \neg R) \\ \hline
+        T & T & T &       F        &            T            \\ \hline
+        T & T & F &       T        &            T            \\ \hline
+        T & F & T &       F        &            T            \\ \hline
+        T & F & F &       F        &            T            \\ \hline
+        F & T & T &       F        &            F            \\ \hline
+        F & T & F &       T        &            T            \\ \hline
+        F & F & T &       F        &            F            \\ \hline
+        F & F & F &       F        &            F            \\
+    
+    \end{array}
+    \]
+\end{enumerate}
+
+%2.6
+\subsection{}
+\begin{enumerate}
+    \setcounter{enumi}{3}
+    \item $\neg (P \lor Q) = (\neg P) \land (\neg Q) $
+    \[
+    \begin{array}{c|c|c|c|c|c}
+        P & Q & \neg P & \neg Q & \neg (P \lor Q) & (\neg P) \land (\neg Q) \\ \hline
+        T & T &   F    &   F    &   \mathbf{F}    &       \mathbf{F}        \\ \hline
+        T & F &   F    &   T    &   \mathbf{F}    &       \mathbf{F}        \\ \hline
+        F & T &   T    &   F    &   \mathbf{F}    &       \mathbf{F}        \\ \hline
+        F & F &   T    &   T    &   \mathbf{T}    &       \mathbf{T}        \\
+    
+    \end{array}
+    \]
+
+    \setcounter{enumi}{11}
+    \item $\neg (P \Rightarrow Q)$ and $P \land \neg Q$ \\
+    I think these are equivalent because the negation of $P \Rightarrow Q$
+    would only be true when P is true and Q is false, which is the same
+    condition for $P \land \neg Q$ to be true.
+    \[
+    \begin{array}{c|c|c|c|c|c}
+        P & Q & \neg Q & \neg (P \Rightarrow Q) & P \land \neg Q \\ \hline
+        T & T &   F    &       \mathbf{F}       &   \mathbf{F}   \\ \hline
+        T & F &   T    &       \mathbf{T}       &   \mathbf{T}   \\ \hline
+        F & T &   F    &       \mathbf{F}       &   \mathbf{F}   \\ \hline
+        F & F &   T    &       \mathbf{F}       &   \mathbf{F}   \\
+    
+    \end{array}
+    \]
+\end{enumerate}
+
+%2.7
+\subsection{}
+\begin{enumerate}
+    \setcounter{enumi}{1}
+    \item $\forall x \in \mathbb{R}, \exists n \in \mathbb{N}, x^{n} \geq 0 $ \\
+    \textbf{For all real numbers $x$, there exists a natural number $n$ such that
+    $x^{n}$ is greater than or equal to 0.} \\
+    \color{blue} 
+    This is true because all real numbers raised to any natural number $2n$
+    will be positive and greater or equal to 0.
+    \color{black}
+
+    \setcounter{enumi}{7}
+    \item $\forall \ n \in \mathbb{Z}, \exists X \subseteq \mathbb{N}, |X| = n $ \\
+    \color{red} 
+    This is false because the cardinality of a set cannot be negative, so 
+    there is no subset of $\mathbb{N}$ with a cardinality of $-1$ for example.
+    \color{black}
+\end{enumerate}
+
+%2.9
+\setcounter{subsection}{8}
+\subsection{}
+\begin{enumerate}
+    \setcounter{enumi}{4}
+    \item For every $\varepsilon > 0$, there exists a $\delta > 0$ such
+    that if $|x - a| < \delta \implies |f(x) - f(a)| < \varepsilon$.
+    \color{blue}
+    \[
+    \forall \ \varepsilon \in \mathbb{N}, \exists \ \delta \in \mathbb{N},
+    (|x - a|) < \delta \implies (|f(x) - f(a)|) < \varepsilon
+    \]
+    \color{black}
+
+
+    \setcounter{enumi}{8}
+    \item If $x$ is a rational number and $x \ne 0$, then tan($x$) is not a rational number. \\
+    \color{blue}
+    \[
+    x \in \mathbb{Q} \implies \tan(x) \notin \mathbb{Q}
+    \]
+    \color{black}
+
+\end{enumerate}
+
+%2.10
+\subsection{}
+\begin{enumerate}
+    \setcounter{enumi}{3}
+    \item For every positive number $\varepsilon$, there is a positive number
+            $\delta$ such that $|x - a| < \delta$ implies $|f(x) - f(a)| < \varepsilon$.
+    \[ 
+        \begin{aligned}
+            \forall \ \varepsilon > 0, \exists \ \delta > 0&, (|x - a|) < \delta \implies (|f(x) - f(a)|) < \varepsilon \\
+            \neg (\forall \ \varepsilon > 0, \exists \ \delta > 0&, (|x - a|) < \delta \implies (|f(x) - f(a)|) < \varepsilon) \\
+            \exists \ \varepsilon > 0, \neg (\exists \ \delta > 0&, (|x - a|) < \delta \implies (|f(x) - f(a)|) < \varepsilon) \\
+            \exists \ \varepsilon > 0, \forall \ \delta > 0&, \neg ((|x - a|) < \delta \implies (|f(x) - f(a)|) < \varepsilon) \\
+            \exists \ \varepsilon > 0, \forall \ \delta > 0&, (|x - a|) < \delta \land \neg ((|f(x) - f(a)|) < \varepsilon)
+        \end{aligned} 
+    \]
+    \fbox{
+        \parbox{0.85\linewidth}{
+            $
+                \begin{aligned}
+                \exists \ \varepsilon > 0,& \forall \ \delta > 0, (|x - a|) < \delta \land (|f(x) - f(a)|) \geq \varepsilon
+                \end{aligned}
+            $
+
+            There exists a positive number $ \varepsilon$ such that 
+                all positive number $\delta$ are greater than $|x - a|$
+                and $|f(x) - f(a)|$ is greater than or equal to $\varepsilon$
+        }
+    }
+    \setcounter{enumi}{7}
+    \item If $x$ is a rational number and $x \ne 0$, then tan($x$) is not a rational number.
+    \[
+        \begin{aligned}
+            \exists \ x \in \mathbb{Q}& \land x \ne 0, \tan(x) \notin \mathbb{Q} \\
+            \neg (\exists \ x \in \mathbb{Q} &\land x \ne 0, \tan(x) \notin \mathbb{Q}) \\
+            \forall \ x \in \mathbb{Q} &\lor x = 0, \neg(\tan(x) \notin \mathbb{Q}) \\
+        \end{aligned}
+    \]
+    \fbox{
+        \parbox{0.8\linewidth}{
+            $\forall \ x \in \mathbb{Q} \lor x = 0, \tan(x) \in \mathbb{Q}$
+            
+            For all rational numbers $x$ or $x$ equals 0, tan($x$) is a rational number.
+        }
+    }
+    
+
+\end{enumerate}
+\end{document}

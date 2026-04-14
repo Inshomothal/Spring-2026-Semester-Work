@@ -1,0 +1,85 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+
+\title{My First LaTeX Document}
+\author{Trevon Collins}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\setcounter{section}{1}
+\subsection{}
+
+\begin{enumerate}[label=\arabic*., leftmargin=*]
+    \setcounter{enumi}{1}
+    \item 
+    \begin{flalign*}
+        &\{3x + 2 : \in \mathbb{Z} \}&\\
+        &\quad \{..., -4, -1, 2, 5, 8, ...\}&
+    \end{flalign*}
+    \setcounter{enumi}{11}
+    \item
+    \begin{flalign*}
+        &\{ x \in \mathbb{Z}, : |2x| < 5 \}&\\
+        &\quad \{ 0, 2, 4 \}&
+    \end{flalign*}
+    \setcounter{enumi}{25}
+    \item 
+    \begin{flalign*}
+        &\{ ..., \frac{1}{27}, \frac{1}{9}, \frac{1}{3}, 1, 3, 9, 27, ... \}&\\
+        &\quad \{ 3^{x} : x \in \mathbb{Z} \}&
+    \end{flalign*}
+    \setcounter{enumi}{33}
+    \item
+    \begin{flalign*}
+        &|\{ x \in \mathbb{N} : |x| < 10 \}|&\\
+        &\quad \text{The set has a cardinality of 10.}&
+    \end{flalign*}
+\end{enumerate}
+
+\subsection{}
+\begin{enumerate}
+    \setcounter{enumi}{1}
+    \item 
+    \begin{flalign*}
+        &\{ 1, 2, \emptyset\}&\\
+        &\quad \{1\}, \{2\}, \{\emptyset\}, \{1, 2\}, \{1, \emptyset\}, \{2, \emptyset\}, \{1, 2, \emptyset\}&
+    \end{flalign*}
+    \item 
+    \begin{flalign*}
+        &\{ \{ \mathbb{R} \} \}&\\
+        &\quad \{ \mathbb{R} \} &
+    \end{flalign*}
+    \item 
+    $\emptyset$ 
+    \begin{flalign*}
+        &\quad  \emptyset&
+    \end{flalign*}
+\end{enumerate}
+
+\subsection{}
+\begin{enumerate}
+    \setcounter{enumi}{7}
+    \item
+    \item
+\end{enumerate}
+
+\subsection{}
+\begin{enumerate}
+    \setcounter{enumi}{7}
+    \item
+    $\mathcal{P} (\{ 1, 2 \} \times \{3\})$
+    \begin{flalign*}
+        &\quad \{3\}, \{6\}, \{ 3, 6 \}&
+    \end{flalign*}
+
+    \setcounter{enumi}{11}
+    $X in $
+    $X in $
+\end{enumerate}
+
+\end{document}
