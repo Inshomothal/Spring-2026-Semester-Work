@@ -12,8 +12,14 @@ package proj05;
 
 public interface Weapon {
     public String getName();
+
     public int rollDamage();
+
+    public int damage();
+
     public void display();
+    
+    
 
 
 

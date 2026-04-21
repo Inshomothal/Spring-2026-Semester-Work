@@ -25,18 +25,22 @@ public class Sword implements Weapon{
         return die.roll();
     }
     
-    public void display(){
+    public void display() {
         System.out.println("""
-                        /\
-                       /  \
+                        /\\
+                       /  \\
                        ||||
                        ||||
                        ||||
                        ||||
-                       /==\
+                       /==\\
                         ][
                         ][
                 You found a Sword!
                 """);
+    }
+    
+    public int damage() {
+        return die.getNumSides();
     }
 }

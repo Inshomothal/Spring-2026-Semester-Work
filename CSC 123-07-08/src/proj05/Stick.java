@@ -20,9 +20,15 @@ public class Stick implements Weapon{
         return "Stick";
     }
 
-    public int rollDamage(){
+    public int rollDamage() {
         return die.roll();
     }
+    
+    public int damage() {
+        return die.getNumSides();
+    }
 
-    public void display(){}
+    public void display() {
+        System.out.println( "...a stick.\n");
+    }
 }

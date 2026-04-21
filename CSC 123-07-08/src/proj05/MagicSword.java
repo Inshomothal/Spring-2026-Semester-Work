@@ -26,18 +26,22 @@ public class MagicSword implements Weapon{
         return die.roll();
     }
     
-    public void display(){
+    public void display() {
         System.out.println("""
-                         /\
-                        /**\
+                         /\\
+                        /**\\
                         ||||
                         ||||
                         ||||
                         ||||
-                        /==\
+                        /==\\
                          ][
                         _][_
                 You found a MagicSword!
                 """);
+    }
+    
+    public int damage() {
+        return die.getNumSides();
     }
 }

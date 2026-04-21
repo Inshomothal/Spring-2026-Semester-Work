@@ -19,21 +19,44 @@ public class Player {
     public Player (String _name, int _health){
         this.name = _name;
         this.health = _health;
+        this.leftHand = new Stick();
+        this.rightHand = new Stick();
 
     }
 
-    public String getName(){}
+    public String getName() {
+        return name;
+    }
 
-    public int getHealth(){}
+    public int getHealth() {
+        return health;
+    }
 
-    public Weapon getLeftHand(){}
+    public Weapon getLeftHand() {
+        return leftHand;
+    }
 
-    public Weapon getRightHand(){}
+    public Weapon getRightHand() {
+        return rightHand;
+    }
 
-    public void setLeftHand(weapon _w){}
+    public void setLeftHand(Weapon _w) {
+        this.leftHand = _w;
+    }
 
-    public void setRightHand(weapon _w){}
+    public void setRightHand(Weapon _w) {
+        this.rightHand = _w;
+    }
 
-    public void recordDamage (int _amount){}
+    public void recordDamage(int _amount) {
+        if (this.health < _amount) {
+            this.health = 0;
+        } else {
+            this.health -= _amount;
+        }
+    }
 
-    public String toString(){}
+    public String toString() {
+        return this.name;
+    }
+}
