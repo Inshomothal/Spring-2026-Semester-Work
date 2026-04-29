@@ -1,14 +1,24 @@
 {
 	"folders": [
 		{
-			"path": "CSC 123-07-08"
-		},
-		{
-			"path": "CSC 281-02"
-		},
-		{
-			"path": "MAT 271"
+			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar",
+			"c:\\Users\\Trevon Collins\\javafx\\javafx-sdk-24.0.1\\lib\\javafx.base.jar",
+			"c:\\Users\\Trevon Collins\\javafx\\javafx-sdk-24.0.1\\lib\\javafx.controls.jar",
+			"c:\\Users\\Trevon Collins\\javafx\\javafx-sdk-24.0.1\\lib\\javafx.fxml.jar",
+			"c:\\Users\\Trevon Collins\\javafx\\javafx-sdk-24.0.1\\lib\\javafx.graphics.jar",
+			"c:\\Users\\Trevon Collins\\javafx\\javafx-sdk-24.0.1\\lib\\javafx.media.jar",
+			"c:\\Users\\Trevon Collins\\javafx\\javafx-sdk-24.0.1\\lib\\javafx.swing.jar",
+			"c:\\Users\\Trevon Collins\\javafx\\javafx-sdk-24.0.1\\lib\\javafx.web.jar",
+			"c:\\Users\\Trevon Collins\\javafx\\javafx-sdk-24.0.1\\lib\\javafx-swt.jar",
+			"c:\\Users\\Trevon Collins\\javafx\\javafx-sdk-24.0.1\\lib\\jdk.jsobject.jar",
+			"c:\\Users\\Trevon Collins\\javafx\\javafx-sdk-24.0.1\\lib\\jfx.incubator.input.jar",
+			"c:\\Users\\Trevon Collins\\javafx\\javafx-sdk-24.0.1\\lib\\jfx.incubator.richtext.jar"
+		],
+		"powershell.cwd": "CSC 123-07-08"
+	}
 }

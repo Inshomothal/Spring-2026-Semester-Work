@@ -1,0 +1,1 @@
+Permission check: Copilot CLI can write to this file.
